@@ -100,10 +100,10 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("𝘼𝙈𝙄𝙂𝙊 𝘾𝙄𝙉𝙀𝙈𝘼𝙎", url="https://t.me/joinchat/NfFdC-5j5YxhMTc1"),
-                        InlineKeyboardButton("MY DEVELOPER", url="https://t.me/NEGANX")
+                        InlineKeyboardButton("𝙈𝙔 𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍", url="https://t.me/NEGANX")
                     ],
                     [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("𝙎𝙊𝙐𝙍𝘾𝙀 𝘾𝙊𝘿𝙍", url="https://t.me/the_johnniewalker")
                     ]
                 ]
             )
