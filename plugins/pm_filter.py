@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 from pyrogram import Client, filters
 import re
 from pyrogram.errors import UserNotParticipant
-from utils import get_filter_results, get_file_details, is_subscribed, get_poster, get_all
+from utils import get_filter_results, get_file_details, is_subscribed, get_poster
 BUTTONS = {}
 BOT = {}
 @Client.on_message(filters.text & filters.private & filters.incoming & filters.user(AUTH_USERS) if AUTH_USERS else filters.text & filters.private & filters.incoming)
@@ -145,7 +145,7 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>📂5𝙼𝙾𝚅𝙸𝙴 𝙽𝙰𝙼𝙴 :-‎ {search}  </b>\n<b>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>📂𝙼𝙾𝚅𝙸𝙴 𝙽𝙰𝙼𝙴 :-‎ {search}  </b>\n<b>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂</b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
                 await message.reply_text(f"<b>📂𝙼𝙾𝚅𝙸𝙴 𝙽𝙰𝙼𝙴 :-‎ {search} ‌‌‌‌ </b>\n<b>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
@@ -161,11 +161,11 @@ async def group(client, message):
         )
         poster=None
         if API_KEY:
-            poster=await get_all(search)
+            poster=await get_poster(search)
         if poster:
-            await message.save_poster(id, v, year, poster), reply_markup=InlineKeyboardMarkup(buttons)
+            await message.reply_photo(photo=poster, caption=f"<b>📂𝙼𝙾𝚅𝙸𝙴 𝙽𝙰𝙼𝙴 :-‎ {search} ‌‌‌‌‎  </b>\n<code>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂</code>", reply_markup=InlineKeyboardMarkup(buttons)) 
         else:
-            await message.reply_text(f"<b>📂8𝙼𝙾𝚅𝙸𝙴 𝙽𝙰𝙼𝙴 :-‎ {search} ‌‌‌‌ </b>\n<code>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂</code>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>📂𝙼𝙾𝚅𝙸𝙴 𝙽𝙰𝙼𝙴 :-‎ {search} ‌‌‌‌ </b>\n<code>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂</code>", reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
