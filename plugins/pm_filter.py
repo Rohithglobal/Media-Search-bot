@@ -161,7 +161,7 @@ async def group(client, message):
         )
         poster=None
         if API_KEY:
-            poster=await get_poster(search)
+            poster=await get_all(search)
         if poster:
             await message.save_poster(id, v, year, poster), reply_markup=InlineKeyboardMarkup(buttons)
         else:
