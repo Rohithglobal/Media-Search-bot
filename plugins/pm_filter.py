@@ -163,7 +163,7 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} ‌‌‌‌‎</b>\n<b>🌟IMDb|🌟🌟🌟🌟🌟</b>\n<b>🎭Genres:Not Given</b>\n\n<b>©𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂</b>", reply_markup=InlineKeyboardMarkup(buttons)) 
+            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n<b>🌟IMDb|🌟🌟🌟🌟🌟</b>\n<b>🎭Genres:<\b><b>Not Given</b>\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂</b>", reply_markup=InlineKeyboardMarkup(buttons)) 
         else:
             await message.reply_text(f"<b>📂𝙼𝙾𝚅𝙸𝙴 𝙽𝙰𝙼𝙴 :-‎ {search} ‌‌‌‌ </b>\n<code>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂</code>", reply_markup=InlineKeyboardMarkup(buttons))
 
