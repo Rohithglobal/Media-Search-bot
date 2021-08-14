@@ -81,10 +81,10 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -100,9 +100,9 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -145,9 +145,9 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
-                await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -309,7 +309,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=False)
+                await query.answer("I Like Your Smartness, But Don't Be Oversmart 🙂",show_alert=False)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
