@@ -27,11 +27,7 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Sorry 😔 sir,
-
-Due to overload Only the Channels Subscribers can use the bot. So, kindly join the channel using the below button and then try again.
-
-സുഹൃത്തേ മൂവി ഡൗൺലോഡ് ചെയ്യാൻ ആദ്യം ഈ ചാനലിൽ ജോയിൻ ചെയ്യുക. എന്നിട്ട് വീണ്ടും ശ്രമിക്കുക**",
+                    text="**Sorry 😔 sir,Due to overload Only the Channels Subscribers can use the bot. So, kindly join the channel using the below button and then try again.സുഹൃത്തേ മൂവി ഡൗൺലോഡ് ചെയ്യാൻ ആദ്യം ഈ ചാനലിൽ ജോയിൻ ചെയ്യുക. എന്നിട്ട് വീണ്ടും ശ്രമിക്കുക",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -70,7 +66,7 @@ Due to overload Only the Channels Subscribers can use the bot. So, kindly join t
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔆 𝘼𝙈𝙄𝙂𝙊 𝘾𝙄𝙉𝙀𝙈𝘼𝙎 🔆', url="https://t.me/joinchat/Yvt8ZOsDTxlkYWNl")
+                        InlineKeyboardButton('🔆 𝘼𝙈𝙄𝙂𝙊 𝘾𝙄𝙉𝙀𝙈𝘼𝙎 🔆', url="https://t.me/AMIGO_CINEMA")
                     ]
                     ]
                 await bot.send_cached_media(
@@ -102,7 +98,7 @@ Due to overload Only the Channels Subscribers can use the bot. So, kindly join t
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝘼𝙈𝙄𝙂𝙊 𝘾𝙄𝙉𝙀𝙈𝘼𝙎", url="https://t.me/joinchat/Yvt8ZOsDTxlkYWNl"),
+                        InlineKeyboardButton("𝘼𝙈𝙄𝙂𝙊 𝘾𝙄𝙉𝙀𝙈𝘼𝙎", url="https://t.me/AMIGO_CINEMA"),
                         InlineKeyboardButton("𝙈𝙔 𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍", url="https://t.me/NEGANX")
                     ],
                     [
