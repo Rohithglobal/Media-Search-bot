@@ -26,11 +26,11 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**Please Join Our Main Channel to use this Bot!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝙈𝘼𝙄𝙉 𝘾𝙃𝘼𝙉𝙉𝙀𝙇", url=invite_link.invite_link)
+                            InlineKeyboardButton("🔆𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝘾𝙃𝘼𝙉𝙉𝙀𝙇🔆", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -163,9 +163,9 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝘼𝙈𝙄𝙂𝙊 𝘾𝙄𝙉𝙀𝙈𝘼𝙎](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons)) 
+            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons)) 
         else:
-            await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝘼𝙈𝙄𝙂𝙊 𝘾𝙄𝙉𝙀𝙈𝘼𝙎](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
