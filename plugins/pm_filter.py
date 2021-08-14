@@ -81,10 +81,10 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:7.7/10|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:9.5/10|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -100,9 +100,9 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:5.6/10|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:8.3/10|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -145,9 +145,9 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:6.4/10|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
             else:
-                await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:9.0/10|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -163,9 +163,9 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings: 8.3/10 or 9.1/10 |IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons)) 
+            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝘼𝙈𝙄𝙂𝙊 𝘾𝙄𝙉𝙀𝙈𝘼𝙎](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons)) 
         else:
-            await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:7.1/10|IMDb\n©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝙰𝙼𝙸𝙶𝙾 𝙲𝙸𝙽𝙴𝙼𝙰𝚂](https://t.me/AMIGO_CINEMA)", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝘼𝙈𝙄𝙂𝙊 𝘾𝙄𝙉𝙀𝙈𝘼𝙎](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
