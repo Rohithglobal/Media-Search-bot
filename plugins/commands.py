@@ -27,14 +27,14 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Sorry 😔 sir,Due to overload Only the Channels Subscribers can use the bot. So, kindly join the channel using the below button and then try again.സുഹൃത്തേ മൂവി ഡൗൺലോഡ് ചെയ്യാൻ ആദ്യം ഈ ചാനലിൽ ജോയിൻ ചെയ്യുക. എന്നിട്ട് വീണ്ടും ശ്രമിക്കുക",
+                    text="Due to overload Only the Channels Subscribers can use the bot. So, kindly join the channel using the below button and then try again.n\സുഹൃത്തേ മൂവി ഡൗൺലോഡ് ചെയ്യാൻ ആദ്യം ഈ ചാനലിൽ ജോയിൻ ചെയ്യുക. എന്നിട്ട് വീണ്ടും ശ്രമിക്കുക",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("🔆𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝘾𝙃𝘼𝙉𝙉𝙀𝙇🔆", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("𝙏𝙍𝙔 𝘼𝙂𝘼𝙄𝙉 🔄", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
