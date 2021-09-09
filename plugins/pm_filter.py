@@ -81,10 +81,10 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [Global Movie](https://t.me/GlobalMovieOfficial)</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
-                await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [Global Movie](https://t.me/GlobalMovieOfficial)</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -100,9 +100,9 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [Global Movie](https://t.me/GlobalMovieOfficial)</b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [Global Movie](https://t.me/GlobalMovieOfficial)</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -145,9 +145,9 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [Global Movie](https://t.me/GlobalMovieOfficial)</b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
-                await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [Global Movie](https://t.me/GlobalMovieOfficial)</b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
         data = BUTTONS[keyword]
@@ -163,9 +163,9 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons)) 
+            await message.reply_photo(photo=poster, caption=f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [Global Movie](https://t.me/GlobalMovieOfficial)</b>", reply_markup=InlineKeyboardMarkup(buttons)) 
         else:
-            await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [𝐀𝐌𝐈𝐆𝐎 𝐂𝐈𝐍𝐄𝐌𝐀𝐒](https://t.me/AMIGO_CINEMA)</b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🎬Movie/series: {search} </b>\n🌟IMDb|🌟🌟🌟🌟🌟</b>\n🎭Ratings:Not Given|IMDb\n<b>©𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 [Global Movie](https://t.me/GlobalMovieOfficial)</b>", reply_markup=InlineKeyboardMarkup(buttons))
 
     
 def get_size(size):
@@ -272,7 +272,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('🔆𝘼𝙈𝙄𝙂𝙊 𝘾𝙄𝙉𝙀𝙈𝘼𝙎🔆', url='https://t.me/AMIGO_CINEMA')               
+                    InlineKeyboardButton('🔆Global Movie🔆', url='https://t.me/GlobalMovieOfficial')               
                 ]
                 ]
             await query.message.edit(text="<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -296,7 +296,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                       InlineKeyboardButton('🔆𝘼𝙈𝙄𝙂𝙊 𝘾𝙄𝙉𝙀𝙈𝘼𝙎🔆', url='https://t.me/AMIGO_CINEMA')                    
+                       InlineKeyboardButton('🔆Global Movie🔆', url='https://t.me/GlobalMovieOfficial')                    
                     ]
                     ]
                 
@@ -327,7 +327,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔆𝘼𝙈𝙄𝙂𝙊 𝘾𝙄𝙉𝙀𝙈𝘼𝙎🔆', url='https://t.me/AMIGO_CINEMA')                      
+                        InlineKeyboardButton('🔆Global Movie🔆', url='https://t.me/GlobalMovieOfficial')                      
                     ]
                     ]
                 
